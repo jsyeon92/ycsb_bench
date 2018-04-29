@@ -32,7 +32,7 @@ ymax = round(int(get_ymax(['throughput'], t)),-1)
 xm = []
 w='mrep="%s"' % "cuckoo"
 for x, y in t.query(select='workload,line', where=w):
-    xrange_max=int(y) * 1.1
+    xrange_max=int(y)
     y = str(float(y) + 0.5)
     xm.append((x, y))
 
