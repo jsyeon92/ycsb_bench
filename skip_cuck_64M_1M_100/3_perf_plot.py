@@ -29,9 +29,9 @@ ctype = 'eps' #if len(sys.argv) < 2 else sys.argv[1]
 t = table(file=data_file)
 ymax = round(int(get_ymax(['throughput'], t)),-1)
 if (data_file == "ycsb_run_throught.dat"):
-	xrange_max=15
+	xrange_max=13
 else:
-	xrange_max=6
+	xrange_max=4
 xm = []
 w='mrep="%s"' % "cuckoo"
 for x, y in t.query(select='workload,line', where=w):
