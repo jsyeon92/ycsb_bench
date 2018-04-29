@@ -8,7 +8,7 @@ def get_ymax(coll_list, t):
     for c in coll_list:
         ymax = ymax if t.getmax(c) < ymax else t.getmax(c)
 
-    ymax = int(ymax) + int(ymax) * 0.3
+    ymax = ymax + ymax * 0.3
 
     round_ymax = 0
     round_scale = 10 if ymax < 100 else 100
@@ -27,12 +27,12 @@ data_file=sys.argv[1]
 ctype = 'eps' #if len(sys.argv) < 2 else sys.argv[1]
 
 t = table(file=data_file)
-ymax = round(int(get_ymax(['throughput'], t)),-1)
+ymax = round(get_ymax(['throughput'], t),-1)
 
 xm = []
 w='mrep="%s"' % "cuckoo"
 for x, y in t.query(select='workload,line', where=w):
-    xrange_max=int(y) * 1.1
+	xrange_max=int(y) * 1.3
     y = str(float(y) + 0.5)
     xm.append((x, y))
 

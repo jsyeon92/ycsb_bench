@@ -2,13 +2,15 @@ from zplot import *
 import sys
 from subprocess import call
 
+
+
 def get_ymax(coll_list, t):
     ymax = 0
 
     for c in coll_list:
         ymax = ymax if t.getmax(c) < ymax else t.getmax(c)
 
-    ymax = int(ymax) + int(ymax) * 0.3
+    ymax = ymax + ymax * 0.3
 
     round_ymax = 0
     round_scale = 10 if ymax < 100 else 100
@@ -16,34 +18,48 @@ def get_ymax(coll_list, t):
     while round_ymax < ymax:
         round_ymax += round_scale
 
+    #print(round_ymax)
+
     return round_ymax
+
+#data_file='memtable.hit.64.dat'
 
 if len(sys.argv) < 2:
     print("./plot.py memtable.hit.dat")
     sys.exit()
 
+#data_file='test.dat'
 data_file=sys.argv[1]
 
 ctype = 'eps' #if len(sys.argv) < 2 else sys.argv[1]
 
 t = table(file=data_file)
-ymax = round(int(get_ymax(['throughput'], t)),-1)
+#t.dump()
+ymax = round(get_ymax(['throughput'], t),-1)
+#global_ymax=int(sys.argv[2])
 
-xm = []
-w='mrep="%s"' % "cuckoo"
-for x, y in t.query(select='workload,line', where=w):
-    xrange_max=int(y) * 1.1
-    y = str(float(y) + 0.5)
-    xm.append((x, y))
-
+#ymax=sys.argv[2]
 c = canvas(ctype, title=data_file, dimensions=['3in', '1.85in'])
-d = drawable(canvas=c, xrange=[0,xrange_max], yrange=[-1,ymax],
+d = drawable(canvas=c, xrange=[0,48], yrange=[-1,ymax],
+            #coord=[0,25]
+            # dimensions=['3in','1.85in']
             )
+
+# background: green, with a yellow vertical grid
+#c.box(coord=[[0,0],[300,140]], fill=True, fillcolor='darkgreen', linewidth=0)
+#grid(drawable=d, y=False, xrange=[90,101], xstep=1, linecolor='yellow',
+ #    linedash=[2,2])
+
 options = [('skip_list', 'solid', 0.5, 'red'),
             ('cuckoo', 'solid', 0.5, 'green'),
             ('prefix_hash', 'solid', 0.5, 'black'),
             ('hash_linkedlist', 'solid', 0.5, 'orange'),]
 
+xm = []
+w='mrep="%s"' % "cuckoo"
+for x, y in t.query(select='workload,line', where=w):
+    y = str(float(y) + 0.5)
+    xm.append((x, y))
 
 #ym = [ymax // 1000000,ymax]
 ym = []
