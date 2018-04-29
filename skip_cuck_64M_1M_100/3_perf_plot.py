@@ -35,6 +35,7 @@ else:
 xm = []
 w='mrep="%s"' % "cuckoo"
 for x, y in t.query(select='workload,line', where=w):
+    xrange_max = int(y) * 1.1
     y = str(float(y))
     xm.append((x, y))
 
