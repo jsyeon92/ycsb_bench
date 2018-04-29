@@ -37,12 +37,12 @@ for x, y in t.query(select='workload,line', where=w):
     xm.append((x, y))
 
 c = canvas(ctype, title=data_file, dimensions=['3in', '1.85in'])
-d = drawable(canvas=c, xrange=[0,int(xrange_max)], yrange=[-1,ymax],
+d = drawable(canvas=c, xrange=[0,20], yrange=[-1,ymax],
             )
 options = [('skip_list', 'solid', 0.5, 'red'),
-            ('cuckoo', 'solid', 0.5, 'green'),
-            ('prefix_hash', 'solid', 0.5, 'black'),
-            ('hash_linkedlist', 'solid', 0.5, 'orange'),]
+            ('cuckoo', 'solid', 0.5, 'green'),]
+#            ('prefix_hash', 'solid', 0.5, 'black'),
+#            ('hash_linkedlist', 'solid', 0.5, 'orange'),]
 
 
 #ym = [ymax // 1000000,ymax]
