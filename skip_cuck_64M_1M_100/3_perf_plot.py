@@ -32,12 +32,12 @@ ymax = round(int(get_ymax(['throughput'], t)),-1)
 xm = []
 w='mrep="%s"' % "cuckoo"
 for x, y in t.query(select='workload,line', where=w):
-    xrange_max=int(y)
+    xrange_max=int(y) * 1.1
     y = str(float(y) + 0.5)
     xm.append((x, y))
 
 c = canvas(ctype, title=data_file, dimensions=['3in', '1.85in'])
-d = drawable(canvas=c, xrange=[0,xrange_max], yrange=[-1,ymax],
+d = drawable(canvas=c, xrange=[0,int(xrange_max)], yrange=[-1,ymax],
             )
 options = [('skip_list', 'solid', 0.5, 'red'),
             ('cuckoo', 'solid', 0.5, 'green'),
