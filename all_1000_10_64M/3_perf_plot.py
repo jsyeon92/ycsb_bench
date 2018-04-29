@@ -40,7 +40,7 @@ ymax = round(get_ymax(['throughput'], t),-1)
 
 #ymax=sys.argv[2]
 c = canvas(ctype, title=data_file, dimensions=['3in', '1.85in'])
-d = drawable(canvas=c, xrange=[0,40], yrange=[-1,ymax],
+d = drawable(canvas=c, xrange=[0,48], yrange=[-1,ymax],
             #coord=[0,25]
             # dimensions=['3in','1.85in']
             )
@@ -52,8 +52,8 @@ d = drawable(canvas=c, xrange=[0,40], yrange=[-1,ymax],
 
 options = [('skip_list', 'solid', 0.5, 'red'),
             ('cuckoo', 'solid', 0.5, 'green'),
-            ('prefix_hash', 'dline1', 0.5, 'black'),
-            ('hash_linkedlist', 'dline1', 0.5, 'orange'),]
+            ('prefix_hash', 'solid', 0.5, 'black'),
+            ('hash_linkedlist', 'solid', 0.5, 'orange'),]
 
 xm = []
 w='mrep="%s"' % "cuckoo"
@@ -63,7 +63,7 @@ for x, y in t.query(select='workload,line', where=w):
 
 #ym = [ymax // 1000000,ymax]
 ym = []
-ym.append((ymax // 1000 , ymax))
+ym.append((ymax, ymax))
 #ym.append((global_ymax,global_ymax*1000))
 
 axis(drawable=d, style='box',

@@ -24,7 +24,9 @@ do
 		fi
 		i=$((i+1))
 	done
-	i=$((i+1))
+	i=$((i+2))
 done
 
+
+python2.7 3_perf_plot.py $fname
 
