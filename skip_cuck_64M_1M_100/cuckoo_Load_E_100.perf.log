@@ -5852,3 +5852,11 @@ Level    Files   Size     Score Read(GB)  Rn(GB) Rnp1(GB) Write(GB) Wnew(GB) Mov
 [2766] 04-29 09:10:00,948 INFO total_connections_received:2
 [2766] 04-29 09:10:00,948 INFO rejected_connections:0
 [2766] 04-29 09:10:00,948 INFO ========================Period Statistics Dump End===========================
+[2766] 04-29 09:20:00,504 INFO ========================Period Statistics Dump Begin===========================
+[2766] 04-29 09:20:00,504 INFO slave_sync_total_commands_processed:0
+[2766] 04-29 09:20:00,504 INFO slave_sync_instantaneous_ops_per_sec:0
+[2766] 04-29 09:20:00,504 INFO total_commands_processed:2001028
+[2766] 04-29 09:20:00,504 INFO instantaneous_ops_per_sec:0
+[2766] 04-29 09:20:00,504 INFO total_connections_received:2
+[2766] 04-29 09:20:00,504 INFO rejected_connections:0
+[2766] 04-29 09:20:00,504 INFO ========================Period Statistics Dump End===========================
