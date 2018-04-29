@@ -36,7 +36,7 @@ xm = []
 w='mrep="%s"' % "cuckoo"
 for x, y in t.query(select='workload,line', where=w):
     xrange_max = int(y) * 1.1
-    y = str(float(y))
+    y = str(float(y) - 0.5)
     xm.append((x, y))
 
 c = canvas(ctype, title=data_file, dimensions=['3in', '1.85in'])
@@ -56,7 +56,7 @@ ym.append((ymax, ymax))
 axis(drawable=d, style='box',
 #   xauto=[1,15,1],
     title=data_file,
-    ytitle="Throughput(ops/s)",
+    ytitle="Throughput",
 	ytitleshift=[20,0],
     xtitle="Threads",
     xmanual=xm,
