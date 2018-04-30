@@ -37,7 +37,7 @@ for x, y in t.query(select='workload,line', where=w):
     xm.append((x, y))
 
 c = canvas(ctype, title=data_file, dimensions=['3in', '1.85in'])
-d = drawable(canvas=c, xrange=[0,xrange_max], yrange=[-1,ymax],
+d = drawable(canvas=c, xrange=[0,xrange_max], yrange=[-1,ymax], dimensions=['2.7in','1.6in']
             )
 options = [('skip_list', 'solid', 0.5, 'red'),
             ('cuckoo', 'solid', 0.5, 'green'),]
@@ -53,7 +53,7 @@ ym.append((ymax, ymax))
 axis(drawable=d, style='box',
 #   xauto=[1,15,1],
     title=data_file,
-    ytitle="IOPS(K)",
+    ytitle="Throughput",
 	ytitleshift=[20,0],
     xtitle="Threads",
     xmanual=xm,
