@@ -1,0 +1,21 @@
+redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: Read timed out
+	at redis.clients.jedis.Protocol.process(Protocol.java:74)
+	at redis.clients.jedis.Protocol.read(Protocol.java:122)
+	at redis.clients.jedis.Connection.getBinaryMultiBulkReply(Connection.java:189)
+	at redis.clients.jedis.Jedis.hgetAll(Jedis.java:861)
+	at com.yahoo.ycsb.db.RedisClient.read(RedisClient.java:100)
+	at com.yahoo.ycsb.DBWrapper.read(DBWrapper.java:135)
+	at com.yahoo.ycsb.workloads.CoreWorkload.doTransactionRead(CoreWorkload.java:683)
+	at com.yahoo.ycsb.workloads.CoreWorkload.doTransaction(CoreWorkload.java:605)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:455)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at redis.clients.util.RedisInputStream.fill(RedisInputStream.java:110)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:46)
+	at redis.clients.jedis.Protocol.process(Protocol.java:59)
+	... 9 more
