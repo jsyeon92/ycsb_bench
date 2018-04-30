@@ -53,7 +53,7 @@ ym.append((ymax, ymax))
 axis(drawable=d, style='box',
 #   xauto=[1,15,1],
     title=data_file,
-    ytitle="IOPS(K)",
+    ytitle="Throughput",
 	ytitleshift=[20,0],
     xtitle="Threads",
     xmanual=xm,

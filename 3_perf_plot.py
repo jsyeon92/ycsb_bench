@@ -7,7 +7,7 @@ def get_ymax(coll_list, t):
 
     for c in coll_list:
         ymax = ymax if t.getmax(c) < ymax else t.getmax(c)
-
+    ymax =float(ymax)
     ymax = ymax + ymax * 0.3
 
     round_ymax = 0
@@ -32,17 +32,17 @@ ymax = round(get_ymax(['throughput'], t),-1)
 xm = []
 w='mrep="%s"' % "cuckoo"
 for x, y in t.query(select='workload,line', where=w):
-	xrange_max=int(y) * 1.3
-    y = str(float(y) + 0.5)
+    xrange_max=int(y) * 1.1
+    y = str(float(y) - 0.5)
     xm.append((x, y))
 
 c = canvas(ctype, title=data_file, dimensions=['3in', '1.85in'])
 d = drawable(canvas=c, xrange=[0,xrange_max], yrange=[-1,ymax],
             )
 options = [('skip_list', 'solid', 0.5, 'red'),
-            ('cuckoo', 'solid', 0.5, 'green'),
-            ('prefix_hash', 'solid', 0.5, 'black'),
-            ('hash_linkedlist', 'solid', 0.5, 'orange'),]
+            ('cuckoo', 'solid', 0.5, 'green'),]
+#            ('prefix_hash', 'solid', 0.5, 'black'),
+#            ('hash_linkedlist', 'solid', 0.5, 'orange'),]
 
 
 #ym = [ymax // 1000000,ymax]
