@@ -11,7 +11,7 @@ ops2=10
 function perf() {
 		i=1
 		buff=$1
-		thread=1
+		thread=16
 		fname_run="ycsb_run_"$thread"_"$buff".dat"
 		fname_load="ycsb_load_"$thread"_"$buff".dat"
 

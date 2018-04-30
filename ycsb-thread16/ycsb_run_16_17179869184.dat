@@ -1,0 +1,13 @@
+# line workload mrep throughput
+1 A skip_list 2272.7272727272725
+2 A cuckoo 1
+4 B skip_list 2380.9523809523807
+5 B cuckoo 1
+7 C skip_list 2222.222222222222
+8 C cuckoo 1
+10 D skip_list 1923.076923076923
+11 D cuckoo 1
+13 E skip_list 80.0
+14 E cuckoo 1
+16 F skip_list 1960.7843137254902
+17 F cuckoo 1

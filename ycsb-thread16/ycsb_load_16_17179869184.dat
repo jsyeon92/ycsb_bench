@@ -1,0 +1,5 @@
+# line workload mrep throughput
+1 Load_A skip_list 10947.027334727254
+2 Load_A cuckoo 35390.71347678369
+4 Load_E skip_list 10479.543930248155
+5 Load_E cuckoo 35310.734463276836
