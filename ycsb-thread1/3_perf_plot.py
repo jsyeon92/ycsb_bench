@@ -32,8 +32,8 @@ ymax = round(get_ymax(['throughput'], t),-1)
 xm = []
 w='mrep="%s"' % "cuckoo"
 for x, y in t.query(select='workload,line', where=w):
-    xrange_max=int(y) * 1.3
-    y = str(float(y) + 0.5)
+    xrange_max=int(y) * 1.1
+    y = str(float(y) - 0.5)
     xm.append((x, y))
 
 c = canvas(ctype, title=data_file, dimensions=['3in', '1.85in'])
