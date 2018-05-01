@@ -1,0 +1,40 @@
+redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketException: Connection reset
+	at redis.clients.jedis.Protocol.process(Protocol.java:74)
+	at redis.clients.jedis.Protocol.read(Protocol.java:122)
+	at redis.clients.jedis.Connection.getIntegerReply(Connection.java:178)
+	at redis.clients.jedis.Jedis.zadd(Jedis.java:1448)
+	at com.yahoo.ycsb.db.RedisClient.insert(RedisClient.java:123)
+	at com.yahoo.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at com.yahoo.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:562)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:468)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at redis.clients.util.RedisInputStream.fill(RedisInputStream.java:110)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:46)
+	at redis.clients.jedis.Protocol.process(Protocol.java:59)
+	... 8 more
+redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketException: Connection reset
+	at redis.clients.jedis.Protocol.process(Protocol.java:74)
+	at redis.clients.jedis.Protocol.read(Protocol.java:122)
+	at redis.clients.jedis.Connection.getIntegerReply(Connection.java:178)
+	at redis.clients.jedis.Jedis.zadd(Jedis.java:1448)
+	at com.yahoo.ycsb.db.RedisClient.insert(RedisClient.java:123)
+	at com.yahoo.ycsb.DBWrapper.insert(DBWrapper.java:221)
+	at com.yahoo.ycsb.workloads.CoreWorkload.doInsert(CoreWorkload.java:562)
+	at com.yahoo.ycsb.ClientThread.run(Client.java:468)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.net.SocketInputStream.read(SocketInputStream.java:127)
+	at redis.clients.util.RedisInputStream.fill(RedisInputStream.java:110)
+	at redis.clients.util.RedisInputStream.readByte(RedisInputStream.java:46)
+	at redis.clients.jedis.Protocol.process(Protocol.java:59)
+	... 8 more
+redis.clients.jedis.exceptions.JedisConnectionException: It seems like server has closed the connection.
+	at redis.clients.util.RedisInputStream.readLine(RedisInputStream.java:91)
+	at redis.clients.jedis.Protocol.processStatusCodeReply(Protocol.java:80)
+	at redis.clients.jedis.Protocol.process(Protocol.java:69)

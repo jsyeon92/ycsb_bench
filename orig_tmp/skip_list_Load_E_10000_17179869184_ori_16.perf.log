@@ -1,0 +1,310 @@
+[26214] 05-01 05:53:51,240 INFO [RocksDB]RocksDB version: 5.13.0
+
+[26214] 05-01 05:53:51,242 INFO [RocksDB]Git sha rocksdb_build_git_sha:019d7894eba8bb01cd4d82df1297f073dab937df
+[26214] 05-01 05:53:51,242 INFO [RocksDB]Compile date May  1 2018
+[26214] 05-01 05:53:51,242 INFO [RocksDB]DB SUMMARY
+
+[26214] 05-01 05:53:51,242 INFO [RocksDB]SST files in /mnt/ssd/rocksdb dir, Total Num: 0, files: 
+
+[26214] 05-01 05:53:51,242 INFO [RocksDB]Write Ahead Log file in /mnt/ssd/rocksdb: 
+
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                        Options.error_if_exists: 0
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                      Options.create_if_missing: 1
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                        Options.paranoid_checks: 1
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                                    Options.env: 0xba6ec0
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                               Options.info_log: 0x7f095f9ab560
+[26214] 05-01 05:53:51,242 INFO [RocksDB]               Options.max_file_opening_threads: 16
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                             Options.statistics: (nil)
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                              Options.use_fsync: 0
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                      Options.max_log_file_size: 0
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                 Options.max_manifest_file_size: 18446744073709551615
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                  Options.log_file_time_to_roll: 0
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                      Options.keep_log_file_num: 1000
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                   Options.recycle_log_file_num: 0
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                        Options.allow_fallocate: 1
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                       Options.allow_mmap_reads: 0
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                      Options.allow_mmap_writes: 0
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                       Options.use_direct_reads: 0
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                       Options.use_direct_io_for_flush_and_compaction: 0
+[26214] 05-01 05:53:51,242 INFO [RocksDB]         Options.create_missing_column_families: 0
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                             Options.db_log_dir: 
+[26214] 05-01 05:53:51,242 INFO [RocksDB]                                Options.wal_dir: /mnt/ssd/rocksdb
+[26214] 05-01 05:53:51,242 INFO [RocksDB]               Options.table_cache_numshardbits: 6
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                     Options.max_subcompactions: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                 Options.max_background_flushes: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                        Options.WAL_ttl_seconds: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                      Options.WAL_size_limit_MB: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.manifest_preallocation_size: 4194304
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                    Options.is_fd_close_on_exec: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                  Options.advise_random_on_open: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                   Options.db_write_buffer_size: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                   Options.write_buffer_manager: 0x7f096017e3f0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]        Options.access_hint_on_compaction_start: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB] Options.new_table_reader_for_compaction_inputs: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]          Options.random_access_max_buffer_size: 1048576
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                     Options.use_adaptive_mutex: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                           Options.rate_limiter: (nil)
+[26214] 05-01 05:53:51,243 INFO [RocksDB]    Options.sst_file_manager.rate_bytes_per_sec: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                      Options.wal_recovery_mode: 2
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                 Options.enable_thread_tracking: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                 Options.enable_pipelined_write: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]        Options.allow_concurrent_memtable_write: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]     Options.enable_write_thread_adaptive_yield: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.write_thread_max_yield_usec: 100
+[26214] 05-01 05:53:51,243 INFO [RocksDB]           Options.write_thread_slow_yield_usec: 3
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                              Options.row_cache: None
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                             Options.wal_filter: None
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.avoid_flush_during_recovery: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.allow_ingest_behind: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.preserve_deletes: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.two_write_queues: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.manual_wal_flush: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.max_background_jobs: 2
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.max_background_compactions: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.avoid_flush_during_shutdown: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]          Options.writable_file_max_buffer_size: 1048576
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.delayed_write_rate : 16777216
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.max_total_wal_size: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]            Options.delete_obsolete_files_period_micros: 21600000000
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                  Options.stats_dump_period_sec: 600
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                         Options.max_open_files: 1024
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                         Options.bytes_per_sync: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]                     Options.wal_bytes_per_sync: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]      Options.compaction_readahead_size: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]Compression algorithms supported:
+[26214] 05-01 05:53:51,243 INFO [RocksDB]	kZSTDNotFinalCompression supported: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]	kZSTD supported: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]	kXpressCompression supported: 0
+[26214] 05-01 05:53:51,243 INFO [RocksDB]	kLZ4HCCompression supported: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]	kLZ4Compression supported: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]	kBZip2Compression supported: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]	kZlibCompression supported: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]	kSnappyCompression supported: 1
+[26214] 05-01 05:53:51,243 INFO [RocksDB]Fast CRC32 supported: Supported on x86
+[26214] 05-01 05:53:51,243 INFO [RocksDB][db/db_impl_open.cc:222] Creating manifest 1 
+
+[26214] 05-01 05:53:51,251 INFO [RocksDB][db/version_set.cc:3088] Recovering from manifest file: MANIFEST-000001
+
+[26214] 05-01 05:53:51,252 INFO [RocksDB][db/column_family.cc:474] --------------- Options for column family [default]:
+
+[26214] 05-01 05:53:51,252 INFO [RocksDB]              Options.comparator: ardb.comparator
+[26214] 05-01 05:53:51,252 INFO [RocksDB]          Options.merge_operator: None
+[26214] 05-01 05:53:51,252 INFO [RocksDB]       Options.compaction_filter: None
+[26214] 05-01 05:53:51,252 INFO [RocksDB]       Options.compaction_filter_factory: ardb.compact_filter_factory
+[26214] 05-01 05:53:51,252 INFO [RocksDB]        Options.memtable_factory: SkipListFactory
+[26214] 05-01 05:53:51,252 INFO [RocksDB]           Options.table_factory: BlockBasedTable
+[26214] 05-01 05:53:51,252 INFO [RocksDB]           table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0x7f095ff8f018)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0x7f0960017ba0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: (nil)
+  persistent_cache: (nil)
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+  enable_index_compression: 1
+  block_align: 0
+
+[26214] 05-01 05:53:51,252 INFO [RocksDB]       Options.write_buffer_size: 17179869184
+[26214] 05-01 05:53:51,252 INFO [RocksDB] Options.max_write_buffer_number: 2
+[26214] 05-01 05:53:51,252 INFO [RocksDB]       Options.compression[0]: NoCompression
+[26214] 05-01 05:53:51,252 INFO [RocksDB]       Options.compression[1]: NoCompression
+[26214] 05-01 05:53:51,252 INFO [RocksDB]       Options.compression[2]: Snappy
+[26214] 05-01 05:53:51,252 INFO [RocksDB]       Options.compression[3]: Snappy
+[26214] 05-01 05:53:51,252 INFO [RocksDB]       Options.compression[4]: Snappy
+[26214] 05-01 05:53:51,252 INFO [RocksDB]       Options.compression[5]: Snappy
+[26214] 05-01 05:53:51,252 INFO [RocksDB]       Options.compression[6]: Snappy
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                 Options.bottommost_compression: Disabled
+[26214] 05-01 05:53:51,252 INFO [RocksDB]      Options.prefix_extractor: ardb.prefix_extractor
+[26214] 05-01 05:53:51,252 INFO [RocksDB]  Options.memtable_insert_with_hint_prefix_extractor: nullptr
+[26214] 05-01 05:53:51,252 INFO [RocksDB]            Options.num_levels: 7
+[26214] 05-01 05:53:51,252 INFO [RocksDB]       Options.min_write_buffer_number_to_merge: 1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]    Options.max_write_buffer_number_to_maintain: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]           Options.compression_opts.window_bits: -14
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                 Options.compression_opts.level: -1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]              Options.compression_opts.strategy: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]        Options.compression_opts.max_dict_bytes: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]        Options.compression_opts.zstd_max_train_bytes: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]     Options.level0_file_num_compaction_trigger: 2
+[26214] 05-01 05:53:51,252 INFO [RocksDB]         Options.level0_slowdown_writes_trigger: 20
+[26214] 05-01 05:53:51,252 INFO [RocksDB]             Options.level0_stop_writes_trigger: 36
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                  Options.target_file_size_base: 67108864
+[26214] 05-01 05:53:51,252 INFO [RocksDB]            Options.target_file_size_multiplier: 1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]               Options.max_bytes_for_level_base: 536870912
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.level_compaction_dynamic_level_bytes: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]         Options.max_bytes_for_level_multiplier: 10.000000
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[0]: 1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[1]: 1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[2]: 1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[3]: 1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[4]: 1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[5]: 1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[6]: 1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]      Options.max_sequential_skip_in_iterations: 8
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                   Options.max_compaction_bytes: 1677721600
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                       Options.arena_block_size: 2147483648
+[26214] 05-01 05:53:51,252 INFO [RocksDB]  Options.soft_pending_compaction_bytes_limit: 68719476736
+[26214] 05-01 05:53:51,252 INFO [RocksDB]  Options.hard_pending_compaction_bytes_limit: 274877906944
+[26214] 05-01 05:53:51,252 INFO [RocksDB]      Options.rate_limit_delay_max_milliseconds: 100
+[26214] 05-01 05:53:51,252 INFO [RocksDB]               Options.disable_auto_compactions: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                       Options.compaction_style: kCompactionStyleLevel
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                         Options.compaction_pri: kByCompensatedSize
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.compaction_options_universal.size_ratio: 1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.compaction_options_universal.min_merge_width: 2
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.compaction_options_universal.max_merge_width: 4294967295
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.compaction_options_universal.max_size_amplification_percent: 200
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.compaction_options_universal.compression_size_percent: -1
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.compaction_options_fifo.max_table_files_size: 1073741824
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.compaction_options_fifo.allow_compaction: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]Options.compaction_options_fifo.ttl: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                  Options.table_properties_collectors: 
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                  Options.inplace_update_support: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                Options.inplace_update_num_locks: 10000
+[26214] 05-01 05:53:51,252 INFO [RocksDB]              Options.memtable_prefix_bloom_size_ratio: 0.000000
+[26214] 05-01 05:53:51,252 INFO [RocksDB]  Options.memtable_huge_page_size: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                          Options.bloom_locality: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                   Options.max_successive_merges: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]               Options.optimize_filters_for_hits: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]               Options.paranoid_file_checks: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]               Options.force_consistency_checks: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]               Options.report_bg_io_stats: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB]                              Options.ttl: 0
+[26214] 05-01 05:53:51,252 INFO [RocksDB][db/version_set.cc:3362] Recovered from manifest file:/mnt/ssd/rocksdb/MANIFEST-000001 succeeded,manifest_file_number is 1, next_file_number is 3, last_sequence is 0, log_number is 0,prev_log_number is 0,max_column_family is 0,deleted_log_number is 0
+
+[26214] 05-01 05:53:51,252 INFO [RocksDB][db/version_set.cc:3370] Column family [default] (ID 0), log number is 0
+
+[26214] 05-01 05:53:51,256 INFO [RocksDB][db/db_impl_open.cc:1218] DB pointer 0x7f095f936000
+[26214] 05-01 05:53:51,256 INFO Ardb init engine:rocksdb success.
+[26214] 05-01 05:53:51,258 INFO Ardb will accept connections on 0.0.0.0:16379
+[26214] 05-01 05:53:51,259 INFO Ardb started with version 0.9.6
+[26214] 05-01 05:53:58,335 INFO [RocksDB][db/version_set.cc:2863] Creating manifest 6
+
+[26214] 05-01 05:53:58,341 INFO [RocksDB][db/column_family.cc:474] --------------- Options for column family [0]:
+
+[26214] 05-01 05:53:58,341 INFO [RocksDB]              Options.comparator: ardb.comparator
+[26214] 05-01 05:53:58,341 INFO [RocksDB]          Options.merge_operator: None
+[26214] 05-01 05:53:58,341 INFO [RocksDB]       Options.compaction_filter: None
+[26214] 05-01 05:53:58,341 INFO [RocksDB]       Options.compaction_filter_factory: ardb.compact_filter_factory
+[26214] 05-01 05:53:58,341 INFO [RocksDB]        Options.memtable_factory: SkipListFactory
+[26214] 05-01 05:53:58,341 INFO [RocksDB]           Options.table_factory: BlockBasedTable
+[26214] 05-01 05:53:58,342 INFO [RocksDB]           table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0x7f095ff8f018)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 0
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  index_type: 0
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0x7f0960017ba0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: (nil)
+  persistent_cache: (nil)
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 2
+  enable_index_compression: 1
+  block_align: 0
+
+[26214] 05-01 05:53:58,342 INFO [RocksDB]       Options.write_buffer_size: 17179869184
+[26214] 05-01 05:53:58,342 INFO [RocksDB] Options.max_write_buffer_number: 2
+[26214] 05-01 05:53:58,342 INFO [RocksDB]       Options.compression[0]: NoCompression
+[26214] 05-01 05:53:58,342 INFO [RocksDB]       Options.compression[1]: NoCompression
+[26214] 05-01 05:53:58,342 INFO [RocksDB]       Options.compression[2]: Snappy
+[26214] 05-01 05:53:58,342 INFO [RocksDB]       Options.compression[3]: Snappy
+[26214] 05-01 05:53:58,342 INFO [RocksDB]       Options.compression[4]: Snappy
+[26214] 05-01 05:53:58,342 INFO [RocksDB]       Options.compression[5]: Snappy
+[26214] 05-01 05:53:58,342 INFO [RocksDB]       Options.compression[6]: Snappy
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                 Options.bottommost_compression: Disabled
+[26214] 05-01 05:53:58,342 INFO [RocksDB]      Options.prefix_extractor: ardb.prefix_extractor
+[26214] 05-01 05:53:58,342 INFO [RocksDB]  Options.memtable_insert_with_hint_prefix_extractor: nullptr
+[26214] 05-01 05:53:58,342 INFO [RocksDB]            Options.num_levels: 7
+[26214] 05-01 05:53:58,342 INFO [RocksDB]       Options.min_write_buffer_number_to_merge: 1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]    Options.max_write_buffer_number_to_maintain: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]           Options.compression_opts.window_bits: -14
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                 Options.compression_opts.level: -1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]              Options.compression_opts.strategy: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]        Options.compression_opts.max_dict_bytes: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]        Options.compression_opts.zstd_max_train_bytes: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]     Options.level0_file_num_compaction_trigger: 2
+[26214] 05-01 05:53:58,342 INFO [RocksDB]         Options.level0_slowdown_writes_trigger: 20
+[26214] 05-01 05:53:58,342 INFO [RocksDB]             Options.level0_stop_writes_trigger: 36
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                  Options.target_file_size_base: 67108864
+[26214] 05-01 05:53:58,342 INFO [RocksDB]            Options.target_file_size_multiplier: 1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]               Options.max_bytes_for_level_base: 536870912
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.level_compaction_dynamic_level_bytes: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]         Options.max_bytes_for_level_multiplier: 10.000000
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[0]: 1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[1]: 1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[2]: 1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[3]: 1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[4]: 1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[5]: 1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.max_bytes_for_level_multiplier_addtl[6]: 1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]      Options.max_sequential_skip_in_iterations: 8
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                   Options.max_compaction_bytes: 1677721600
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                       Options.arena_block_size: 2147483648
+[26214] 05-01 05:53:58,342 INFO [RocksDB]  Options.soft_pending_compaction_bytes_limit: 68719476736
+[26214] 05-01 05:53:58,342 INFO [RocksDB]  Options.hard_pending_compaction_bytes_limit: 274877906944
+[26214] 05-01 05:53:58,342 INFO [RocksDB]      Options.rate_limit_delay_max_milliseconds: 100
+[26214] 05-01 05:53:58,342 INFO [RocksDB]               Options.disable_auto_compactions: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                       Options.compaction_style: kCompactionStyleLevel
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                         Options.compaction_pri: kByCompensatedSize
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.compaction_options_universal.size_ratio: 1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.compaction_options_universal.min_merge_width: 2
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.compaction_options_universal.max_merge_width: 4294967295
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.compaction_options_universal.max_size_amplification_percent: 200
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.compaction_options_universal.compression_size_percent: -1
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.compaction_options_fifo.max_table_files_size: 1073741824
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.compaction_options_fifo.allow_compaction: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]Options.compaction_options_fifo.ttl: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                  Options.table_properties_collectors: 
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                  Options.inplace_update_support: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                Options.inplace_update_num_locks: 10000
+[26214] 05-01 05:53:58,342 INFO [RocksDB]              Options.memtable_prefix_bloom_size_ratio: 0.000000
+[26214] 05-01 05:53:58,342 INFO [RocksDB]  Options.memtable_huge_page_size: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                          Options.bloom_locality: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                   Options.max_successive_merges: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]               Options.optimize_filters_for_hits: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]               Options.paranoid_file_checks: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]               Options.force_consistency_checks: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]               Options.report_bg_io_stats: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB]                              Options.ttl: 0
+[26214] 05-01 05:53:58,342 INFO [RocksDB][db/db_impl.cc:1382] Created column family [0] (ID 1)
+[26214] 05-01 05:53:58,345 INFO Create ColumnFamilyHandle with name:0 success.
+=================skip_list run workload e====================

@@ -5,7 +5,7 @@ workloads_run="A B C D E F"
 workloads_load="Load_A Load_E"
 buff_list="67108864 17179869184"
 ops=100
-ops2=10000
+ops2=10
 
 
 function perf() {
